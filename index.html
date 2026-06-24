@@ -1,156 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travel Guide Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide Website</title>
 
-<style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body{
-        font-family: Arial, sans-serif;
-        background:#f4f4f4;
-        color:#333;
-        text-align:center;
-        line-height:1.6;
-    }
-    nav{
-        background:#2c3e50;
-        padding:15px;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+        }
 
-    nav a{
-        color:white;
-        text-decoration:none;
-        margin:0 20px;
-        font-weight:bold;
-    }
+        /* Navigation Bar */
+        nav {
+            background-color: #264653;
+            padding: 15px;
+        }
 
-    nav a:hover{
-        color:#f1c40f;
-    }
-    .welcome{
-        padding:60px 20px;
-        background:white;
-    }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            font-size: 16px;
+        }
 
-    .welcome h1{
-        color:#2c3e50;
-        margin-bottom:15px;
-    }
-    .quote{
-        background:#3498db;
-        color:white;
-        padding:40px;
-        font-size:22px;
-        font-style:italic;
-    }
-    section{
-        padding:50px 20px;
-    }
+        nav a:hover {
+            color: #e9c46a;
+        }
 
-    h2{
-        color:#2c3e50;
-        margin-bottom:15px;
-    }
-    .why ul{
-        list-style:none;
-    }
+        .brand {
+            color: #e9c46a;
+            font-size: 20px;
+        }
 
-    .why li{
-        margin:10px 0;
-        font-size:18px;
-    }
-    .review{
-        background:white;
-        margin:20px;
-        padding:30px;
-        border-radius:10px;
-        box-shadow:0 0 10px rgba(0,0,0,0.1);
-    }
-    .team{
-        background:#ecf0f1;
-    }
+        /* Welcome Section */
+        .welcome {
+            background: linear-gradient(to right, #2a9d8f, #48cae4);
+            color: white;
+            padding: 80px 20px;
+        }
 
-    .team p{
-        margin:8px;
-    }
-    footer{
-        background:#2c3e50;
-        color:white;
-        padding:20px;
-    }
-</style>
+        .welcome h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
 
+        .welcome p {
+            font-size: 18px;
+        }
+
+        /* Quote Section */
+        .quote {
+            background-color: white;
+            padding: 50px 20px;
+            font-style: italic;
+            font-size: 24px;
+            color: #264653;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            color: #264653;
+            margin-bottom: 15px;
+        }
+
+        /* Why Travel With Us */
+        .why ul {
+            list-style: none;
+        }
+
+        .why li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Review Card */
+        .review-card {
+            background-color: white;
+            width: 70%;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        /* Team Section */
+        .team {
+            background-color: #eaf4f4;
+        }
+
+        .team p {
+            margin: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #264653;
+            color: white;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">Destinations</a>
-    <a href="package.html">Packages</a>
-    <a href="contact.html">Contact</a>
-    <a href="travelguide.html"><Travel Guide</a>
-</nav>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Destinations</a>
+        <a href="package.html">Packages</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" class="brand">TravelGuide</a>
+    </nav>
 
-<section class="welcome">
-    <h1>Welcome to Travel Guide Website</h1>
-    <p>
-        Discover breathtaking destinations, exciting travel experiences,
-        and memorable journeys across the world.
-    </p>
-</section>
-
-<section class="quote">
-    <p>"Travel is the only thing you buy that makes you richer."</p>
-</section>
-
-<section>
-    <h2>Our Mission</h2>
-    <p>
-        Our mission is to inspire travelers by providing reliable travel
-        information, affordable packages, and unforgettable experiences.
-    </p>
-</section>
-
-<section class="why">
-    <h2>Why Travel With Us?</h2>
-    <ul>
-        <li>✓ Trusted Travel Information</li>
-        <li>✓ Affordable Travel Packages</li>
-        <li>✓ Easy Destination Planning</li>
-        <li>✓ Memorable Travel Experiences</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Traveler Review</h2>
-    <div class="review">
+    <!-- Welcome Heading -->
+    <section class="welcome">
+        <h1>Welcome to Travel Guide Website</h1>
         <p>
-            "Amazing travel experience! The website made it easy to find
-            destinations and plan our trip. Highly recommended!"
+            Discover beautiful destinations, explore exciting travel opportunities,
+            and create unforgettable memories around the world.
         </p>
-        <h4>- Happy Traveler</h4>
-    </div>
-</section>
+    </section>
 
-<section class="team">
-    <h2>Developed By</h2>
-    <p>Subha Shree</p>
-    <p>Moni Shankar</p>
-    <p>Team Member 3</p>
-    <p>Team Member 4</p>
-    <p>Team Member 5</p>
-</section>
+    <!-- Travel Quote -->
+    <section class="quote">
+        <p>"The world is a book, and those who do not travel read only one page."</p>
+    </section>
 
-<footer>
-    <p>&copy; 2026 Travel Guide Website | All Rights Reserved</p>
-</footer>
+    <!-- Our Mission -->
+    <section>
+        <h2>Our Mission</h2>
+        <p>
+            To inspire and guide travelers by providing reliable information,
+            affordable travel options, and memorable travel experiences.
+        </p>
+    </section>
+
+    <!-- Why Travel With Us -->
+    <section class="why">
+        <h2>Why Travel With Us?</h2>
+        <ul>
+            <li>✓ Trusted Travel Information</li>
+            <li>✓ Affordable Travel Packages</li>
+            <li>✓ Easy Trip Planning</li>
+            <li>✓ Memorable Travel Experiences</li>
+        </ul>
+    </section>
+
+    <!-- Traveler Review -->
+    <section>
+        <h2>Traveler Review</h2>
+        <div class="review-card">
+            <p>
+                "Excellent travel guidance and easy-to-use website.
+                It helped us plan our vacation perfectly."
+            </p>
+            <h4>- Happy Traveler</h4>
+        </div>
+    </section>
+
+    <!-- Developed By -->
+    <section class="team">
+        <h2>Developed By</h2>
+        <p>Arumugam Anand</p>
+        <p>Silvester Simon</p>
+        <p>Manisha Selvam</p>
+        <p>Subha Shree</p>
+        <p>Naren Kumar</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Travel Guide Website | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
